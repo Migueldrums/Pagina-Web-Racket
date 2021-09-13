@@ -158,54 +158,54 @@ body: {
   	color: #ce3d57
 	}
 
-	.button-two {
-		font-family: Arial,sans-serif;
-		font-weight: bold;
-		font-size: 110%;
-		text-align: left;
-		color: #0044ab;
-		padding-left: 100px;
-		padding-right: 30px;
-		border-radius: 5px;
-		border: 0px solid white;
-		position: absolute;
-		right: 5%;
-		top: 36%;
-		width: 28%;
-		height: 23%;
-		background-color: white;
-		background-image:url("button2.jpg");
-		background-repeat: no-repeat;
-		background-size: 90px 106px;
-		background-position: -2px 0px;
+.button-two {
+	font-family: Arial,sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+	text-align: left;
+	color: #0044ab;
+	padding-left: 100px;
+	padding-right: 30px;
+	border-radius: 5px;
+	border: 0px solid white;
+	position: absolute;
+	right: 5%;
+	top: 36%;
+	width: 28%;
+	height: 23%;
+	background-color: white;
+	background-image:url("button2.jpg");
+	background-repeat: no-repeat;
+	background-size: 90px 106px;
+	background-position: -2px 0px;
 	}
 
-	.button-two:hover {
-	  	color: #ce3d57
-		}
+.button-two:hover {
+	color: #ce3d57
+}
 
-		.button-three {
-			font-family: Arial,sans-serif;
-			font-weight: bold;
-			font-size: 110%;
-			text-align: left;
-			border-radius: 5px;
-			padding-left: 100px;
-			padding-right: 28px;
-			color: #0044ab;
-			border: 0px solid white;
-			position: absolute;
-			right: 5%;
-			top: 64%;
-			width: 28%;
-			height: 27%;
-			background-color: white;
-			background-image:url("button3.jpg");
-			background-repeat: no-repeat;
-			background-size: 95px 130px;
-			background-position: -5px 0px
-		}
+.button-three {
+	font-family: Arial,sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+	text-align: left;
+	border-radius: 5px;
+	padding-left: 100px;
+	padding-right: 28px;
+	color: #0044ab;
+	border: 0px solid white;
+	position: absolute;
+	right: 5%;
+	top: 64%;
+	width: 28%;
+	height: 27%;
+	background-color: white;
+	background-image:url("button3.jpg");
+	background-repeat: no-repeat;
+	background-size: 95px 130px;
+	background-position: -5px 0px
+}
 
-		.button-three:hover {
-		  	color: #ce3d57
-			}
+.button-three:hover {
+	color: #ce3d57
+	}
