@@ -1,0 +1,61 @@
+#lang racket
+(require web-server/servlet  
+         web-server/servlet-env)
+
+(define (start req)
+  (response/xexpr
+   `(html (head (title "Ubiot Store")
+                (link ((rel "stylesheet")
+                       (href "/test-static.css")
+                       (type "text/css"))))
+          (body
+           '(div ((class "parte-superior"))
+                 (h2 "Ubiot Store")
+                 (img ([src "logo.jpg"])))
+           
+           '(div ((class "page-content"))
+             '(div ((class "product-container"))
+                   (h3 "Alicate de Corte Aislado")
+                   (img ([src "imagen1.jpg"]))
+                   (h1 "10$")
+                   (button ((class "button-detalles")) "Detalles"))
+
+             '(div ((class "product-container"))
+                   (h3 "Alicate de Punta Aislado")
+                   (img ([src "imagen2.jpg"]))
+                   (h1 "11$")
+                   (button ((class "button-detalles")) "Detalles"))
+
+             '(div ((class "product-container"))
+                   (h3 "Destornillador Aislado")
+                   (img ([src "imagen3.jpg"]))
+                   (h1 "15$")
+                   (button ((class "button-detalles")) "Detalles"))
+
+             '(div ((class "product-container"))
+                   (h3 "Multímetro Digital")
+                   (img ([src "imagen4.jpg"]))
+                   (h1 "50$")
+                   (button ((class "button-detalles")) "Detalles"))
+
+             '(div ((class "product-container"))
+                   (h3 "Guantes Dieléctricos")
+                   (img ([src "imagen5.jpg"]))
+                   (h1 "20$")
+                   (button ((class "button-detalles")) "Detalles"))
+
+             '(div ((class "product-container"))
+                   (h3 "Alicate Aislado")
+                   (img ([src "imagen6.jpg"]))
+                   (h1 "12$")
+                   (button ((class "button-detalles")) "Detalles")))))))
+                
+
+(serve/servlet start
+               #:listen-ip #f
+               #:servlet-path "/ubiotstore.rkt"
+               #:port 8000
+               #:extra-files-paths
+                (list
+                 (build-path "/home/training1/Migue/Pagina-Web/docs/htdocs")
+                 (build-path "/home/training1/Migue/Pagina-Web/docs/images")))
