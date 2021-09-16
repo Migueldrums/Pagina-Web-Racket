@@ -88,6 +88,10 @@ nav ul li div ul .Titulo {
 	text-align: left;
 }
 
+nav ul li div ul p {
+	display: inline-flex;
+}
+
 .button-submenu {
 	font-family: Arial,sans-serif;
 	font-weight: 600;
@@ -95,17 +99,11 @@ nav ul li div ul .Titulo {
 	background-color: blue;
 	text-align: left;
 	border-radius: 5px;
+	border: 1px solid #0044ab; /* Blue */
 	padding: 10px 10px;
 	color: white;
-	border: 1px solid #0044ab; /* Blue */
-	display:inline-flex;
 	position: relative;
 	margin-left: 20px;
-}
-
-nav > ul > li > div > ul > p {
-	display: inline-flex;
-	left: 5px;
 }
 
 nav ul li div ul li a {
@@ -122,7 +120,7 @@ nav > ul > li > div > ul > li > a:hover {
 /*Contenido*/
 .page-content {
 	width: 100%;
-	height: 200%;
+	height: 100%; /*Pendiente por editar*/
 	background-color: #eee;
 }
 
@@ -181,6 +179,7 @@ nav > ul > li > div > ul > li > a:hover {
   	color: white;
 }
 
+/*Optimizar estos 3 botones con las mismas propiedades menos el background*/
 .button-one {
 	font-family: Arial,sans-serif;
 	font-weight: bold;
@@ -258,3 +257,28 @@ nav > ul > li > div > ul > li > a:hover {
 .button-three:hover {
 	color: #ce3d57
 	}
+
+/*Secciones*/
+
+.content-sections {
+	margin: 50px 50px;
+	height: 500px;
+	background-color: white;
+	border: 2px;
+	border-radius: 20px;
+}
+
+/*Hardware*/
+.content-sections h1 {
+	font-family: Roboto,sans-serif;
+	font-weight: 600;
+	color: black;
+}
+
+/*Software*/
+.content-sections > .software-content > h1 {
+	font-family: Roboto,sans-serif;
+	font-weight: 900;
+	font-size: 450%;
+	color: #ce3d57;
+}
