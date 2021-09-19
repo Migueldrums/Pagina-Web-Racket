@@ -2,8 +2,9 @@
 (require web-server/servlet
          web-server/servlet-env)
 
-(define (start req)
-  (response/xexpr
+(define (main-page req)
+  (define (response-generator embed/url)
+   (response/xexpr
    `(html (head (title "Ubiot Store")
                 (link ((rel "stylesheet")
                        (href "/test-static.css")
@@ -12,6 +13,7 @@
            '(div ((class "parte-superior"))
              (header
               (nav ((class "navegacion"))
+                   (a ((href ,(embed/url main-page))) (img ([src "logo-ubiot.png"])))
                      (ul ((class "menu"))
                                 
                            (li (a ((href "hardware-section.html")) "Hardware")
@@ -37,7 +39,7 @@
                                      (li (a ((href "")) "Ayuda"))
                                      (li (a ((href "")) "Foros")))))
                            
-                           (li (a ((href "")) "Libros y Revistas")
+                           (li (a ((href "books-section.html")) "Libros y Revistas")
                                (div
                                 (ul ((class "Submenu"))
                                      (li ((class "Titulo"))
@@ -48,7 +50,7 @@
                                      (li (a ((href "")) "Estructura alámbrica"))
                                      (li (a ((href "")) "PC personalizado")))))
                            
-                           (li (a ((href "")) "Aprender")
+                           (li (a ((href "learn-section.html")) "Aprender")
                                (div
                                 (ul ((class "Submenu"))
                                      (li ((class "Titulo"))
@@ -58,7 +60,7 @@
                                      (li (a ((href "")) "Para la industria"))
                                      (li (a ((href "")) "Aprende en un CoderDojo")))))
                            
-                           (li (a ((href "")) "Enseñar")
+                           (li (a ((href "teach-section.html")) "Enseñar")
                                (div
                                 (ul ((class "Submenu"))
                                      (li ((class "Titulo"))
@@ -68,7 +70,7 @@
                                      (li (a ((href "")) "Iniciar un club de códigos"))
                                      (li (a ((href "")) "Cursos de formación online")))))
                            
-                           (li (a ((href "")) "Nosotros")
+                           (li (a ((href "about-us-section.html")) "Nosotros")
                                (div
                                 (ul ((class "Submenu"))
                                      (li ((class "Titulo"))
@@ -85,18 +87,20 @@
                      (h3 "Tu computadora personal, integrada en un teclado compacto")
                      (link (a ((href "")) (button ((class "button-Saber-mas")) "Saber más")))
                      
+              '(div ((class "right-buttons"))
                      (link (a ((href "")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
                      (link (a ((href "")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
-                     (link (a ((href "")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa")))))))))
+                     (link (a ((href "")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))))))
 
-(serve/servlet start
+(send/suspend/dispatch response-generator))
+
+(serve/servlet main-page
                #:listen-ip #f
                #:launch-browser? #t
                #:quit? #f
                #:servlet-path "/ubiotstore.rkt"
                #:port 8000
                #:extra-files-paths
-                (list
-                 (build-path "/home/training1/Migue/Pagina-Web/docs/htdocs")
-                 (build-path "/home/training1/Migue/Pagina-Web/docs/images")
-                 (build-path "/home/training1/Migue/Pagina-Web/docs")))
+                (list (build-path (current-directory) "../htdocs")
+                      (build-path (current-directory) "../images")
+                      (build-path (current-directory) "../files")))
