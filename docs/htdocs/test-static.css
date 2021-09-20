@@ -29,6 +29,11 @@ nav a img {
 	position: absolute;
 	top: 5px;
 	left: 60px;
+	transition: 0.5s;
+}
+
+nav a img:hover {
+	transform: scale(1.1);
 }
 
 nav ul {
