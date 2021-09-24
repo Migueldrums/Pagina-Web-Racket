@@ -1,19 +1,21 @@
 #lang racket
-(require web-server/servlet
-         web-server/servlet-env)
+(require web-server/servlet)
+(provide/contract (ubiot-store (request? . -> . response?)))
 
-(define (main-page req)
+(define (ubiot-store req)
   (define (response-generator embed/url)
    (response/xexpr
    `(html (head (title "Ubiot Store")
                 (link ((rel "stylesheet")
                        (href "/test-static.css")
-                       (type "text/css"))))
+                       (type "text/css")))
+                (meta ((name "viewport")
+                       (content "width=device-width, initial-scale=1.0"))))
           (body
-           '(div ((class "parte-superior"))
+           '(div ((class "backgroud"))
              (header
-              (nav ((class "navegacion"))
-                   (a ((href ,(embed/url main-page))) (img ([src "logo-ubiot.png"])))
+               (nav ((class "navegacion"))
+                   (a ((href ,(embed/url ubiot-store))) (img ([src "logo-ubiot.png"])))
                      (ul ((class "menu"))
                                 
                            (li (a ((href "hardware-section.html")) "Hardware")
@@ -100,7 +102,7 @@
                                        (li (a ((href "")) "Blog"))))))))))
 
            '(div ((class "page-content"))
-             '(div ((class "base"))                   
+             '(div ((class "backgroud-image"))                   
                      (h2 "Controlador Lógico Programable")
                      (h3 "Automatiza tus procesos con un PLC")
                      (link (a ((href "https://new.siemens.com/global/en/products/automation/systems/industrial/plc-old.html")) (button ((class "button-Saber-mas")) "Saber más")))
@@ -112,7 +114,8 @@
 
 (send/suspend/dispatch response-generator))
 
-(serve/servlet main-page
+(require web-server/servlet-env)
+(serve/servlet ubiot-store
                #:listen-ip #f
                #:launch-browser? #t
                #:quit? #f

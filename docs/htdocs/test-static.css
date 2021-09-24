@@ -6,19 +6,25 @@
 	box-sizing: border-box;
 }
 
+#main {
+	width:960px;
+	margin:0 auto;
+}
+
 body: {
-	background-color: #ecdddd;
+	background-color: #ecdddd; /*Gris*/
 }
 
 /*Menu desplegable*/
 header {
 	height: 70px;
 	width: 100%;
-	max-width:1100px;
-	margin: auto;
+	max-width:1000px;
+	margin: 0px;
 }
 
 nav {
+	width: 100%;
 	background: white;
 	position: relative;
 }
@@ -29,7 +35,7 @@ nav a img {
 	position: absolute;
 	top: 5px;
 	left: 60px;
-	transition: 0.5s;
+	transition: 0.4s;
 }
 
 nav a img:hover {
@@ -38,9 +44,9 @@ nav a img:hover {
 
 nav ul {
 	list-style: none;
-	padding-top: 5px;
-	margin-left: 115px;
+	padding-top: 10px;
 	overflow: hidden;
+	margin-left: 12%;
 }
 
 nav > ul > li {
@@ -48,7 +54,7 @@ nav > ul > li {
 	font-family: Arial,sans-serif;
 	font-weight: bold;
 	font-size: 125%;
-	padding: 10px 5px;
+	padding: 5px 10px;
 }
 
 nav ul li a {
@@ -162,30 +168,29 @@ nav ul li div ul div {
 	width: 100%;
 	height: 100%;
 	background-color:#eee;
+	padding: 5% 5%;
 }
 
-.base {
-	width: 910px;
-	height: 460px;
-	top: 105px;
-	left: 50px;
+.backgroud-image {
+	width: 90%;
+	max-width: 950px;
+	height: 100%;
+	max-height: 500px;
 	position: absolute;
-	background-color:#b40c14;
 	background-image:url("plc.jpg");
 	background-repeat:repeat;
-	background-position: 0% -5%; /*-20% 10%;*/
-	background-size: 70% 100%; /*75% 110%;*/
+	background-size: 70% 100%;
 	display: flex;
 	flex-direction: column;
 }
 
-.base h2 {
+.backgroud-image h2 {
 	font-family: Arial,sans-serif;
 	font-weight: bold;
 	font-size: 230%;
 	color: white;
-	margin-left: 15px; /*140px;*/
-	margin-top: 265px; /*225px;*/
+	margin-left: 15px;
+	margin-top: 265px;
 	text-align: left;
 	-webkit-text-stroke: 1px black;
 	text-shadow: 2px 0px 0px black,
@@ -194,7 +199,7 @@ nav ul li div ul div {
 							 0px -2px 0px black;
 }
 
-.base h3 {
+.backgroud-image h3 {
 	font-family: Arial,sans-serif;
 	font-weight: normal;
 	text-align: left;
