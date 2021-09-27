@@ -14,7 +14,7 @@
           (body
            '(div ((class "parte-superior"))
              (header
-              (a ((href ,(embed/url ubiot-store))) (img ([src "logo-ubiot.png"])))
+              (a ((href "http://35.224.55.29:8081/ubiotstore.rkt")) (img ([src "logo-ubiot.png"])))
               (input ((type "checkbox") (id "button-menu")))
               (label ((for "button-menu")) (img ([src "icono-menu.png"])))
               
