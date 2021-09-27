@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Nosotros</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1, maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="/test-static.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
     <div class="parte-superior">
       <header>
-        <nav class="navegacion">
-          <a href="http://localhost:8000/ubiotstore.rkt"><img src="logo-ubiot.png"></a>
-            <ul class="menu">
+        <a href="http://localhost:8000/ubiotstore.rkt"><img src="logo-ubiot.png"></a>
+        <input type="checkbox" id="button-menu">
+        <label for="button-menu"><img src="icono-menu.png" alt=""></label>
+
+        <div class="navegacion">
+          <nav class="menu">
+            <ul>
 
               <li><a href="hardware-section.html">Hardware</a>
                 <div>
-                  <ul>
+                  <ul class="Submenu">
                     <div class="left-content">
                       <li class="Titulo">
                         <h1>Computadoras y accesorios Raspberry Pi de bajo costo y alto rendimiento</h1></li>
@@ -34,8 +40,8 @@
               </li>
 
               <li><a href="software-section.html">Software</a>
-                  <div>
-                    <ul>
+                <div>
+                    <ul class="Submenu">
                       <div class="left-content">
                         <li class="Titulo">
                           <h1>Todo lo que necesita para comenzar con su computadora Raspberry Pi</h1></li>
@@ -54,7 +60,7 @@
 
               <li><a href="books-section.html">Libros y Revistas</a>
                 <div>
-                  <ul>
+                  <ul class="Submenu">
                     <div class="left-content">
                       <li class="Titulo">
                         <h1>Libros y revistas de Raspberry Pi Press Libros y revistas de Raspberry Pi Press</h1></li>
@@ -72,8 +78,8 @@
               </li>
 
               <li><a href="learn-section.html">Aprender</a>
-                  <div>
-                    <ul>
+                <div>
+                    <ul class="Submenu">
                       <div class="left-content">
                         <li class="Titulo">
                           <h1>Recursos gratuitos para que los jóvenes aprendan a codificar y se conviertan en creadores digitales</h1></li>
@@ -91,7 +97,7 @@
 
               <li><a href="teach-section.html">Enseñar</a>
                 <div>
-                  <ul>
+                  <ul class="Submenu">
                     <div class="left-content">
                       <li class="Titulo">
                         <h1>Capacitación, recursos y orientación gratuitos para ayudarlo a enseñar informática con confianza.</h1></li>
@@ -109,7 +115,7 @@
 
               <li><a href="about-us-section.html">Nosotros</a>
                 <div>
-                  <ul>
+                  <ul class="Submenu">
                     <div class="left-content">
                       <li class="Titulo">
                         <h1>Trabajamos para poner el poder de la informática y la creación digital en manos de personas de todo el mundo.</h1></li>
@@ -127,15 +133,15 @@
               </li>
 
             </ul>
-        </nav>
+          </nav>
+        </div>
       </header>
     </div>
 
     <div class="content-sections">
       <div class="about-us-content">
-        <h1>Nosotros</h1>
+        <h1>Sobre Nosotros</h1>
       </div>
     </div>
-
   </body>
 </html>

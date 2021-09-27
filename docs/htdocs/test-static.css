@@ -1,81 +1,122 @@
-*{
+body {
 	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
-#main {
-	width:960px;
-	margin:0 auto;
-}
-
-body: {
-	background-color: #ecdddd; /*Gris*/
-}
-
-/*Menu desplegable*/
 header {
-	height: 70px;
 	width: 100%;
-	max-width:1000px;
-	margin: 0px;
+	max-width: 1000px;
+	margin:0px;
+	background-color: white;
 }
 
-nav {
+#button-menu {
+	display: none;
+}
+
+header label {  /*Icono del menu responsive*/
+	position:relative;
+	margin-left: auto;
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 15px;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.2);
+}
+
+header a img {  /*Imagen del logo*/
+	width: 35px;
+	height: 45px;
+	position:absolute;
+	padding-top: 5px;
+	padding-left: 50px;
+	transition: 0.4s;
+	z-index: 100;
+}
+
+header a img:hover {
+	transform: scale(1.1);
+}
+
+.navegacion {
 	width: 100%;
 	background: white;
 	position: relative;
 }
 
-nav a img {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	top: 5px;
-	left: 60px;
-	transition: 0.4s;
-}
-
-nav a img:hover {
-	transform: scale(1.1);
-}
-
-nav ul {
+.menu ul {
+	margin: 0px;
 	list-style: none;
-	padding-top: 10px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
-	margin-left: 12%;
+	z-index: 1000;
 }
 
-nav > ul > li {
-	float: left;
-	font-family: Arial,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
-	padding: 5px 10px;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: black;
-	font-family: Arial,sans-serif;
-	font-weight: bold;
-	display: block;
-	padding: 10px 10px;
-}
-
-nav > ul > li > a:hover {
+.menu ul li a:hover {
 	color: #b40c14;
 }
 
-nav > ul > li:hover div {
+.menu li a {
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 120%;
+	font-weight: bold;
+}
+/****************************************************************************/
+/*Menu responsive*/
+@media (max-width:800px) {
+		header label {
+			display: block;
+		}
+
+		header a img {
+			padding-top: 5px;
+			padding-left: 15px;
+		}
+		.menu {
+			position: absolute;
+			background: white;
+			width: 100%;
+			height: 700px;
+			margin-left: -100%;
+			transition: all 0.5s;
+			z-index: 1000;
+		}
+
+		.menu ul {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		.menu > ul > li:hover div {
+			display: none;
+		}
+
+		#button-menu:checked ~ .navegacion .menu {
+			margin-left: 0px;
+		}
+
+		.right-buttons button {
+			display: none;
+		}
+}
+/****************************************************************************/
+
+div > nav > ul > li:hover div {
 	display: table;
 	z-index: 1000;
 }
+
 /*Submenu*/
-nav ul li div {
+div nav ul li div {
 	width: 105%;
 	max-width: 1000px;
 	position: absolute;
@@ -86,40 +127,39 @@ nav ul li div {
 	display: none;
 }
 
-nav ul li div ul {
+div nav ul li div ul {
 	display:inline-flex;
 	position: relative;
 	height: 250px;
 }
 
-nav ul li div ul div {
+div nav ul li div ul div {
 	float: left;
 	position:relative;
-	height: 70%;
-	padding: 10px 10px
+	height: 100%;
+	padding: 10px 5px;
 }
 
 /*Contenido del Submenu*/
 .left-content {
+	width: 55%;
 	top: 10px;
-	left: 0px;
-	width: 65%;
+	left: 10px;
 	text-align: left;
 }
 
 .Titulo {
-	width: 90%;
-	font-size: 80%;
+	position: absolute;
+	width: 80%;
+	font-size: 95%;
 	font-weight: bold;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	padding-left: 5px;
+	padding-top: 10px;
+	margin-left: 85px;
 }
 
 .left-content p {
 	display:inline-flex;
-	padding-top: 5px;
-	padding-right: 2px;
+	padding-right: 150px;
 }
 
 .button-submenu {
@@ -132,9 +172,9 @@ nav ul li div ul div {
 	border: 1px solid #980407; /*Vinotinto Oscuro*/
 	padding: 10px 10px;
 	color: white;
-	position: relative;
-	left: 10px;
-	top: 10px;
+	position: absolute;
+	margin-left: 60px;
+	top: 140px;
 	transition-duration: 0.3s;
 }
 
@@ -145,24 +185,24 @@ nav ul li div ul div {
 
 .right-content {
 	width: 40%;
-	top: 10px;
+	top: 10px;;
 	text-align: left;
 }
 
 .right-content li a {
-	padding: 2%;
-	top: 15px;
-	bottom: 10px;
-	left: 0px;
+	padding: 5px;
+	top: 20px;
 	font-weight: 400;
 	text-decoration:underline;
 	position: relative;
 	text-align:left;
+	margin-left: 10px;
 	color: #0052cc;
 }
 .right-content li > a:hover {
 	color: #b40c14;
 }
+
 /*Contenido de la Pagina de Inicio*/
 .page-content {
 	width: 100%;
@@ -238,7 +278,7 @@ nav ul li div ul div {
 .right-buttons button {
 	font-family: Arial,sans-serif;
 	font-weight: bold;
-	font-size: 110%;
+	font-size: 100%;
 	text-align: left;
 	color: #0044ab;
 	padding-left: 100px;
@@ -260,7 +300,7 @@ nav ul li div ul div {
 	background-color: white;
 	background-image:url("button1.jpg");
 	background-repeat: no-repeat;
-	background-size: 110px 105px;
+	background-size: 110px 110px;
 	background-position: -20px 5px;
 }
 
@@ -270,7 +310,7 @@ nav ul li div ul div {
 	background-color: white;
 	background-image:url("button2.jpg");
 	background-repeat: no-repeat;
-	background-size: 90px 106px;
+	background-size: 90px 115px;
 	background-position: -2px 0px;
 	}
 
@@ -280,13 +320,13 @@ nav ul li div ul div {
 	background-color: white;
 	background-image:url("button3.jpg");
 	background-repeat: no-repeat;
-	background-size: 95px 130px;
+	background-size: 95px 135px;
 	background-position: -5px 0px
 }
 
 /*SECCIONES DEL MENU*/
 .content-sections {
-	margin: 50px 50px;
+	margin: 10px 10px;
 	height: 500px;
 	border: 2px;
 	border-radius: 20px;
@@ -297,7 +337,7 @@ nav ul li div ul div {
 .hardware-content h1 {
 	font-family: Roboto,sans-serif;
 	font-weight: 600;
-	font-size: 350%;
+	font-size: 200%;
 	color: #9e1112;
 	text-align: center;
 }

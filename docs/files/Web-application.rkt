@@ -10,14 +10,17 @@
                        (href "/test-static.css")
                        (type "text/css")))
                 (meta ((name "viewport")
-                       (content "width=device-width, initial-scale=1.0"))))
+                       (content "width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"))))
           (body
-           '(div ((class "backgroud"))
+           '(div ((class "parte-superior"))
              (header
-               (nav ((class "navegacion"))
-                   (a ((href ,(embed/url ubiot-store))) (img ([src "logo-ubiot.png"])))
-                     (ul ((class "menu"))
-                                
+              (a ((href ,(embed/url ubiot-store))) (img ([src "logo-ubiot.png"])))
+              (input ((type "checkbox") (id "button-menu")))
+              (label ((for "button-menu")) (img ([src "icono-menu.png"])))
+              
+               (div ((class "navegacion"))
+                     (nav ((class "menu"))
+                        (ul        
                            (li (a ((href "hardware-section.html")) "Hardware")
                                (div
                                  (ul ((class "Submenu"))
@@ -99,7 +102,7 @@
                                        (li (a ((href "")) "Donar"))
                                        (li (a ((href "")) "Apoyanos"))
                                        (li (a ((href "")) "Investigar"))
-                                       (li (a ((href "")) "Blog"))))))))))
+                                       (li (a ((href "")) "Blog")))))))))))
 
            '(div ((class "page-content"))
              '(div ((class "backgroud-image"))                   
