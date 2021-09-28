@@ -12,9 +12,9 @@
                 (meta ((name "viewport")
                        (content "width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"))))
           (body
-           '(div ((class "parte-superior"))
+           '(div
              (header
-              (a ((href ,(embed/url ubiot-store))) (img ([src "logo-ubiot.png"])))
+              (a ((href "/ubiotstore.rkt")) (img ([src "logo-ubiot.png"])))
               (input ((type "checkbox") (id "button-menu")))
               (label ((for "button-menu")) (img ([src "icono-menu.png"])))
               
@@ -123,7 +123,7 @@
                #:launch-browser? #t
                #:quit? #f
                #:servlet-path "/ubiotstore.rkt"
-               #:port 8000
+               #:port 8081
                #:extra-files-paths
                 (list (build-path (current-directory) "../htdocs")
                       (build-path (current-directory) "../images")
