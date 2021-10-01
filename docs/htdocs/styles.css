@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap'); */
+
 *{
 	margin: 0;
 	padding: 0;
@@ -173,6 +175,7 @@ div nav ul li div ul div {
 	height: 100%;
 	background-color:#eee;
 	padding: 5% 5%;
+	list-style: none;
 }
 
 .backgroud-image {
@@ -352,8 +355,93 @@ div nav ul li div ul div {
 	text-align: center;
 }
 
+/*FOOTER*/
+.footer-box {
+		width: 100%;
+		background-color: rgb(245, 246, 249) /*gris claro*/
+}
+
+.footer-box .section-1 {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 50px;
+	padding: 40px 40px;
+}
+
+.box {
+	text-align: center;
+}
+
+.footer-box .section-1 figure img {
+	width: 50px;
+	height: 60px;
+}
+
+.footer-box .section-1 .box h3 {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.footer-box .section-1 .box p {
+	font-size: 15px;
+	margin-bottom: 7px;
+	text-decoration: none;
+}
+
+.footer-box .section-1 .box p a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer-box .section-1 .box p a:hover {
+	text-decoration: underline;
+}
+
+.footer-box .section-1 .our-social-media a {
+	display: inline-block;
+	justify-content: center;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.2s;
+}
+
+.footer-box .section-1 .our-social-media a:hover {
+	transform: scale(1.4);
+}
+
+.footer-box .section-1 .our-social-media hr {
+		width: 90%;
+		margin: 15px;
+}
+
+.footer-box .section-1 .our-social-media .logo figure {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.footer-box .section-1 .our-social-media .logo figure img {
+	width: 80px;
+	height: 100px;
+}
+
+.footer-box .section-2 {;
+	padding: 5px 10px;
+	text-align: center;
+	color: black;
+}
+
+.footer-box .section-2 small {
+	font-size: 15px;
+}
+
 /****************************************************************************/
-/*Menu responsive*/
+/*Responsive*/
 @media (max-width:910px) {
 	*{
 		margin: 0;
@@ -421,6 +509,13 @@ div nav ul li div ul div {
 			position: absolute;
 			bottom: 5%;
 			margin-left: 30%;
+		}
+
+		.footer-box .section-1 {
+			width: 90%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 30px;
+			padding: 35px 0px;
 		}
 }
 /****************************************************************************/

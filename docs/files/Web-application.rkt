@@ -7,7 +7,7 @@
    (response/xexpr
    `(html (head (title "Ubiot Store")
                 (link ((rel "stylesheet")
-                       (href "/test-static.css")
+                       (href "/styles.css")
                        (type "text/css")))
                 (meta ((name "viewport")
                        (content "width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"))))
@@ -108,12 +108,55 @@
              '(div ((class "backgroud-image"))                   
                      (h2 "Controlador Lógico Programable")
                      (h3 "Automatiza tus procesos con un PLC")
-                     (link (a ((href "https://new.siemens.com/global/en/products/automation/systems/industrial/plc-old.html")) (button ((class "button-Saber-mas")) "Saber más")))
+                     (li (a ((href "https://new.siemens.com/global/en/products/automation/systems/industrial/plc-old.html")) (button ((class "button-Saber-mas")) "Saber más")))
                      
               '(div ((class "right-buttons"))
-                     (link (a ((href "hardware-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
-                     (link (a ((href "software-section.html")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
-                     (link (a ((href "learn-section.html")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))))))
+                     (li (a ((href "hardware-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
+                     (li (a ((href "software-section.html")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
+                     (li (a ((href "learn-section.html")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))
+
+
+              '(footer ((class "footer-box"))
+                 '(div ((class "section-1"))
+                            
+                     '(div ((class "box"))
+                           (h3 "SOBRE NOSOTROS")
+                           (p (a ((href "")) "Sobre nosotros"))
+                           (p (a ((href "")) "Nuestro equipo"))
+                           (p (a ((href "")) "Gobernancia"))
+                           (p (a ((href "")) "Salvaguardar"))
+                           (p (a ((href "")) "Investigar"))
+                           (p (a ((href "")) "Trabajos"))
+                           (p (a ((href "")) "Contáctenos")))
+
+                     '(div ((class "box"))
+                           (h3 "APOYO")
+                           (p (a ((href "")) "Ayudar"))
+                           (p (a ((href "")) "Documentación"))
+                           (p (a ((href "")) "Proyectos"))
+                           (p (a ((href "")) "Capacitación"))
+                           (p (a ((href "")) "Software"))
+                           (p (a ((href "")) "Foros")))
+                     
+                     '(div ((class "box"))
+                           (h3 "SIGUENOS")
+                           (div ((class "our-social-media"))
+                                (a ((href "")) "F")
+                                (a ((href "")) "T")
+                                (a ((href "")) "I")
+
+                                (hr ((size "3px") (color "black")))
+                                
+                                (div ((class "logo"))
+                                      (figure (img ([src "logo-ubiot.png"]))))))
+                     
+                     '(div ((class "box"))
+                           (h3 "CONTACTANOS")
+                           (p (a ((href "")) "Lorem ipsum dolor sit amet"))
+                           (p (a ((href "")) "Lorem ipsum dolor sit amet"))))
+                 
+                 '(div ((class "section-2"))
+                       (small copy " 2021 " (b "Ubiot") " - Todos los derechos reservados."))) ))))
 
 (send/suspend/dispatch response-generator))
 
