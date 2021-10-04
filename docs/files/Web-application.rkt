@@ -11,6 +11,8 @@
                        (type "text/css")))
                 (meta ((name "viewport")
                        (content "width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"))))
+                (script ([src "https://kit.fontawesome.com/e52591ecb3.js"]) (crossorigin "anonymous"))
+          
           (body
            '(div
              (header
@@ -21,7 +23,7 @@
                (div ((class "navegacion"))
                      (nav ((class "menu"))
                         (ul        
-                           (li (a ((href "hardware-section.html")) "Hardware")
+                           (li (a ((href "hardware-section.html")) "Productos")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
@@ -116,10 +118,10 @@
                      (li (a ((href "learn-section.html")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))
 
 
-              '(footer ((class "footer-box"))
-                 '(div ((class "section-1"))
+              '(footer
+                 '(div ((class "container__footer"))
                             
-                     '(div ((class "box"))
+                     '(div ((class "box__footer"))
                            (h3 "SOBRE NOSOTROS")
                            (p (a ((href "")) "Sobre nosotros"))
                            (p (a ((href "")) "Nuestro equipo"))
@@ -129,7 +131,7 @@
                            (p (a ((href "")) "Trabajos"))
                            (p (a ((href "")) "Contáctenos")))
 
-                     '(div ((class "box"))
+                     '(div ((class "box__footer"))
                            (h3 "APOYO")
                            (p (a ((href "")) "Ayudar"))
                            (p (a ((href "")) "Documentación"))
@@ -138,25 +140,26 @@
                            (p (a ((href "")) "Software"))
                            (p (a ((href "")) "Foros")))
                      
-                     '(div ((class "box"))
-                           (h3 "SIGUENOS")
+                     '(div ((class "box__footer"))
                            (div ((class "our-social-media"))
-                                (a ((href "")) "F")
-                                (a ((href "")) "T")
-                                (a ((href "")) "I")
+                                (a ((href "") (class "fa fa-facebook fa-2x")))
+                                (a ((href "") (class "fa fa-instagram fa-2x")))
+                                (a ((href "") (class "fa fa-twitter fa-2x")))
+                                (a ((href "") (class "fa fa-youtube fa-2x"))))
 
                                 (hr ((size "3px") (color "black")))
                                 
                                 (div ((class "logo"))
-                                      (figure (img ([src "logo-ubiot.png"]))))))
+                                      (img ([src "logo-ubiot.svg"]))))
                      
-                     '(div ((class "box"))
+                     '(div ((class "box__footer"))
                            (h3 "CONTACTANOS")
                            (p (a ((href "")) "Lorem ipsum dolor sit amet"))
                            (p (a ((href "")) "Lorem ipsum dolor sit amet"))))
                  
-                 '(div ((class "section-2"))
-                       (small copy " 2021 " (b "Ubiot") " - Todos los derechos reservados."))) ))))
+                 '(div ((class "box__copyright"))
+                       (hr)
+                       (p copy " 2021 " (b "Ubiot") " - Todos los derechos reservados."))) ))))
 
 (send/suspend/dispatch response-generator))
 
