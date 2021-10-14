@@ -75,9 +75,9 @@
                                        (p (a ((href "learn-section.html")) (button ((class "button-submenu")) "Aprender en casa"))))
 
                                     (div ((class "right-content"))
-                                       (li (a ((href "")) "Proyectos de codificación guiada"))
-                                       (li (a ((href "")) "Para la industria"))
-                                       (li (a ((href "")) "Aprende en un CoderDojo"))))))
+                                       (li (a ((href "")) "Guias de implementación"))
+                                       (li (a ((href "")) "Tutoriales"))
+                                       (li (a ((href "")) "Cursos online"))))))
                            
                            (li (a ((href "teach-section.html")) "Enseñar")
                                (div
@@ -108,9 +108,9 @@
 
            '(div ((class "page-content"))
              '(div ((class "backgroud-image"))                   
-                     (h2 "Controlador Lógico Programable")
-                     (h3 "Automatiza tus procesos con un PLC")
-                     (li (a ((href "https://new.siemens.com/global/en/products/automation/systems/industrial/plc-old.html")) (button ((class "button-Saber-mas")) "Saber más")))
+                     (h2 "Raspberry Pi")
+                     (h3 "Desarrolla tus proyectos con una Raspberry Pi")
+                     (li (a ((href "software-section.html")) (button ((class "button-Saber-mas")) "Saber más")))
                      
               '(div ((class "right-buttons"))
                      (li (a ((href "hardware-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
@@ -154,8 +154,8 @@
                      
                      '(div ((class "box__footer"))
                            (h3 "CONTACTANOS")
-                           (p (a ((href "")) "Lorem ipsum dolor sit amet"))
-                           (p (a ((href "")) "Lorem ipsum dolor sit amet"))))
+                           (p (a ((href "")) "Numero de contacto 1"))
+                           (p (a ((href "")) "Numero de contacto 2"))))
                  
                  '(div ((class "box__copyright"))
                        (hr)
