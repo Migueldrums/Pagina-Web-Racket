@@ -173,7 +173,8 @@ div nav ul li div ul div {
 /*Contenido de la pagina principal*/
 .page-content {
 	width: 100%;
-	height: 80%;
+	height: 100%;
+	max-height: 650px;
 	background-color:#eee;
 	padding: 5%;
 	list-style: none;
@@ -603,21 +604,28 @@ footer {
 .box__footer .our-social-media {
 	justify-content: center;
 	width: 300px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .box__footer .our-social-media a {
-	font-size: calc(1.5em + 1vw);
 	display: inline-block;
-	padding: 5px 15px;
-	margin-left: 5px;
+	padding: 0px 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
 	text-decoration: none;
-	color: #343434;
 	transition: all 0.2s;
+	font-size: calc(1.7em + 1vw)
 }
 
 .box__footer .our-social-media a:hover {
 	transform: scale(1.4);
+}
+
+.box__footer .our-social-media a img { /*Iconos de RS*/
+	width: 100%;
+	max-width: 40px;
+	height: 100%;
+	max-height: 35px;
 }
 
 .box__footer hr {
@@ -625,13 +633,13 @@ footer {
 	height: 2.7px;
 	background-color: black;
 	width: 100%;
+	margin: 10px 0px;
 }
 
 .box__footer .logo img {
 	width: 70%;
-	height: 60%;
-	margin: 5% 15%;
-	color: #343434;
+	height: 65%;
+	margin: 0% 15%;
 }
 
 .box__copyright {
@@ -771,8 +779,13 @@ footer {
 		}
 
 		.box__footer .our-social-media a {
-			padding: 5px 8px;
-			font-size: calc(1.6em + 1vw)
+			padding: 5px 5px;
+			margin-left: 5px;
+		}
+
+		.box__footer .our-social-media a img { /*Iconos de RS*/
+			width: 30px;
+			height: 25px;
 		}
 
 		.box__footer hr {

@@ -142,12 +142,12 @@
                      
                      '(div ((class "box__footer"))
                            (div ((class "our-social-media"))
-                                (a ((href "")) (img ([src "logo-facebook.png"])))
-                                (a ((href "")) (img ([src "logo-instagram.png"])))
-                                (a ((href "")) (img ([src "logo-twitter.png"])))
-                                (a ((href "")) (img ([src "logo-youtube.png"]))))
+                                (a ((href "") (class "fa fa-facebook fa-2x")))
+                                (a ((href "") (class "fa fa-instagram fa-2x")))
+                                (a ((href "") (class "fa fa-twitter fa-2x")))
+                                (a ((href "") (class "fa fa-youtube fa-2x"))))
 
-                                (hr)
+                                (hr ((size "3px") (color "black")))
                                 
                                 (div ((class "logo"))
                                       (img ([src "logo-ubiot-2.png"]))))
