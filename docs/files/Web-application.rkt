@@ -154,8 +154,8 @@
                      
                      '(div ((class "box__footer"))
                            (h3 "CONTACTANOS")
-                           (p (a ((href "")) "Numero de contacto 1"))
-                           (p (a ((href "")) "Numero de contacto 2"))))
+                           (p (a ((href "")) "Contacto 1"))
+                           (p (a ((href "")) "Contacto 2"))))
                  
                  '(div ((class "box__copyright"))
                        (hr)
