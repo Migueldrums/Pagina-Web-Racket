@@ -142,10 +142,10 @@
                      
                      '(div ((class "box__footer"))
                            (div ((class "our-social-media"))
-                                (a ((href "")) (img ([src "logo-facebook.png"])))
-                                (a ((href "")) (img ([src "logo-instagram.png"])))
-                                (a ((href "")) (img ([src "logo-twitter.png"])))
-                                (a ((href "")) (img ([src "logo-youtube.png"]))))
+                                (a ((href "")) (i ((class "fab fa-facebook-f"))))
+                                (a ((href "")) (i ((class "fab fa-instagram"))))
+                                (a ((href "")) (i ((class "fab fa-twitter"))))
+                                (a ((href "")) (i ((class "fab fa-youtube")))))
 
                                 (hr)
                                 

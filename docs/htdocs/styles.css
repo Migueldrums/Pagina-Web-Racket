@@ -621,11 +621,25 @@ footer {
 	transform: scale(1.4);
 }
 
-.box__footer .our-social-media a img { /*Iconos de RS*/
-	width: 100%;
-	max-width: 40px;
-	height: 100%;
-	max-height: 35px;
+/*Iconos de RS*/
+.fa-facebook-f {
+	color: #4267B2;
+}
+
+.fa-instagram {
+	color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-twitter {
+	color: #1DA1F2;
+}
+
+.fa-youtube {
+	color: #FF0000;
 }
 
 .box__footer hr {
@@ -638,7 +652,7 @@ footer {
 
 .box__footer .logo img {
 	width: 70%;
-	height: 65%;
+	height: 70%;
 	margin: 0% 15%;
 }
 
