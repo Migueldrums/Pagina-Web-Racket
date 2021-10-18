@@ -38,13 +38,13 @@
                                        (li (a ((href "")) "Documentación"))
                                        (li (a ((href "")) "Foros"))))))
                            
-                           (li (a ((href "software-section.html")) "Software")
+                           (li (a ((href "https://www.raspberrypi.com/software/")) "Software")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
                                        (li ((class "Titulo"))
-                                          (h1 "Todo lo que necesita para comenzar con su computadora Raspberry Pi"))
-                                       (p (a ((href "software-section.html")) (button ((class "button-submenu")) "Nuestro software"))))
+                                          (h1 "Instale el sistema operativo Raspberry Pi usando Raspberry Pi Imager"))
+                                       (p (a ((href "https://www.raspberrypi.com/software/")) (button ((class "button-submenu")) "Nuestro software"))))
 
                                     (div ((class "right-content"))
                                        (li (a ((href "")) "Raspberry Pi OS"))
@@ -66,18 +66,18 @@
                                        (li (a ((href "")) "Estructura alámbrica"))
                                        (li (a ((href "")) "PC personalizado"))))))
                            
-                           (li (a ((href "learn-section.html")) "Aprender")
+                           (li (a ((href "https://raspberrypi-espana.es/")) "Aprende")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
                                        (li ((class "Titulo"))
-                                          (h1 "Recursos gratuitos para que los jóvenes aprendan a codificar y se conviertan en creadores digitales"))
-                                       (p (a ((href "learn-section.html")) (button ((class "button-submenu")) "Aprender en casa"))))
+                                          (h1 "Todo lo que necesitas saber para empezar con tu Raspberry Pi"))
+                                       (p (a ((href "https://raspberrypi-espana.es/")) (button ((class "button-submenu")) "Aprender en casa"))))
 
                                     (div ((class "right-content"))
+                                       (li (a ((href "https://raspberrypi-espana.es/tutoriales/")) "Tutoriales"))
                                        (li (a ((href "")) "Guias de implementación"))
-                                       (li (a ((href "")) "Tutoriales"))
-                                       (li (a ((href "")) "Cursos online"))))))
+                                       (li (a ((href "https://raspberrypi-espana.es/noticias-de-raspberry-pi/")) "Actualidades"))))))
                            
                            (li (a ((href "teach-section.html")) "Enseñar")
                                (div
