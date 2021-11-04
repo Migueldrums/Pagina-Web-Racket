@@ -23,14 +23,14 @@
                (div ((class "navegacion"))
                      (nav ((class "menu"))
                         (ul        
-                           (li (a ((href "hardware-section.html")) "Productos")
+                           (li (a ((href "products-section.html")) "Productos")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
                                        (li ((class "Titulo"))
                                           (h1 "Computadoras y accesorios Raspberry Pi de bajo costo y alto rendimiento"))
                                        (p (a ((href "https://www.raspberrypi.org/products/raspberry-pi-4-model-b/")) (button ((class "button-submenu")) "Comprar Raspberry Pi 4")))
-                                       (p (a ((href "https://www.raspberrypi.org/products/raspberry-pi-400/")) (button ((class "button-submenu")) "Comprar Raspberry Pi 400"))))
+                                       (p (a ((href "RaspberryPi400.html")) (button ((class "button-submenu")) "Comprar Raspberry Pi 400"))))
 
                                     (div ((class "right-content"))
                                        (li (a ((href "")) "Todos los productos"))
@@ -113,7 +113,7 @@
                      (li (a ((href "software-section.html")) (button ((class "button-Saber-mas")) "Saber más")))
                      
               '(div ((class "right-buttons"))
-                     (li (a ((href "hardware-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
+                     (li (a ((href "teach-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
                      (li (a ((href "software-section.html")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
                      (li (a ((href "learn-section.html")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))
 
