@@ -35,12 +35,12 @@ header label:hover {
 	background: rgba(0,0,0,0.2);
 }
 
-header a img {  /*Imagen del logo*/
-	width: 40px;
-	height: 50px;
+header a img {  /*Logo Ubiot*/
+	width: 46px;
+	height: 56px;
 	position:absolute;
 	left: 7%;
-	top: 3px;
+	top: 4px;
 	transition: 0.4s;
 	z-index: 100;
 }
@@ -64,17 +64,17 @@ header a img:hover {
 	z-index: 1000;
 }
 
-.menu ul li a:hover {
-	color: #b40c14;
-}
-
 .menu li a {
 	display: block;
 	padding: 20px 20px;
 	text-decoration: none;
 	color: black;
-	font-size: calc(0.5em + 1vw);
+	font-size: calc(0.6em + 1vw);
 	font-weight: bold;
+}
+
+.menu li a:hover {
+	color: #b40c14;
 }
 
 div > nav > ul > li:hover div {
@@ -131,7 +131,7 @@ div nav ul li div ul div {
 .button-submenu {
 	font-family: Arial,sans-serif;
 	font-weight: 600;
-	font-size: 75%;
+	font-size:calc(0.15em + 1vw);
 	background-color: #980407; /*Vinotinto Oscuro*/
 	text-align: left;
 	border-radius: 5px;
@@ -423,6 +423,7 @@ div nav ul li div ul div {
 }
 
 .product_card p {
+	font-family: Rubik,sans-serif;
 	padding: 5px 30px;
 	font-size: calc(0.5em + 1vw);
 }
@@ -510,9 +511,439 @@ div nav ul li div ul div {
 			margin-left: 65%;
 			margin-bottom: 3%;
 		}
+}
+
+/*****************************************************************************/
+/*Este primer producto contiene variables globales que influyen en el resto
+de los productos*/
+
+/*Producto 1: RaspberryPi400*/
+.product-details_RP400 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container_raspberrypi400 {
+	font-family: Rubik, sans-serif;
+}
+
+/*Imagen principal del producto*/
+.main-image_RP400 {
+	position: relative;
+	width: 100%;
+	height: 660px;
+	background-image: url(Raspberry-Pi-400.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 660px;
+}
+
+/*Texto principal del producto*/
+.main-image_RP400 p {
+	width: 40%;
+	position: absolute;
+	left: 5%;
+	top: 54%;
+	color: white;
+	font-size: 30px;
+	font-family: Rubik,sans-serif;
+}
+
+/*Detalles del producto*/
+.main-image_RP400 a {
+	display:block;
+	width: 20%;
+	position: relative;
+	left: 5%;
+	top: 75%;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: calc(0.9em + 1vw);
+	font-family: Rubik,sans-serif;
+}
+
+.main-image_RP400 a:hover {
+	text-decoration: underline;
+}
+
+/*Detalles del producto: Scroll*/
+.Details_RP400 {
+	position: relative;
+	height: 80px;
+	background: #bb1e3d;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px;
+	align-items: center;
+}
+
+.Details_RP400 a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: calc(0.9em + 1vw);
+	font-family: Rubik,sans-serif;
+}
+
+.Details_RP400 a:hover {
+	text-decoration: underline;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section {
+	width: 100%;
+	height: 550px;
+	display: flex;
+	padding: 5px 35px;
+	align-items: center;
+}
+
+section img {
+	width: 55%;
+	height: 60%;
+	border-radius: 15px;
+	margin: 20px;
+}
+
+.container_text {
+	margin: 40px;
+}
+
+.container_text h1 {
+	font-size: calc(1.4em + 1vw);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.container_text p {
+	font-size: calc(0.8em + 1vw);
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+/*Detalles del producto: Comprar ahora*/
+.Buy-now {
+	height: 650px;
+	padding: 50px;
+	background-color: #d02d1e /*Vinotinto*/
+}
+
+.Buy-now_content {
+	height: 550px;
+	background-color: #fff;
+	text-align: center;
+	align-items: center;
+	display: block;
+	position: relative;
+	padding: 40px;
+}
+
+.Buy-now_content h1 {
+	font-size: calc(1.4em + 1vw);
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.Buy-now_content p {
+	font-size: calc(0.9em + 1vw);
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+
+/*Detalles del producto: Boton Comprar ahora*/
+.Buy-now_content a {
+	padding: 15px 15px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: 1px solid #3ACB49; /* Green */
+	background-color: #3ACB49;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: calc(1em + 1vw);
+ 	transition-duration: 0.4s;
+}
+
+.Buy-now_content a:hover {
+  background-color: #61E96F; /* Green */
+	border: 1px solid #61E96F;
+	cursor: pointer;
+}
+
+.Buy-now-images {
+	position: relative;
+	width: 90%;
+	top: 7%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Boton de Comprar ahora: Imagen ML y MP*/
+.Buy-now_images_ML-MP img {
+	width:245px;
+ 	height:125px;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Boton de Comprar ahora: Logo Ubiot*/
+.Buy-now_images_logo-ubiot img {
+	width:105px;
+  height:115px;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1000px) {
+	section {
+		width: auto;
+		height: auto;
+		flex-direction: column-reverse;
+		padding: 20px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	section img {
+		width: 90%;
+		height: 65%;
+	}
+
+	.container_text {
+		text-align: left;
+	}
+
+	section h1 {
+		width: 100%;
+
+	}
+
+	section p {
+		width: 100%;
+	}
+}
+
+@media (max-width: 750px) {
+	/*Detalles del producto: Scroll*/
+	.Details_RP400 {
+		padding: 5px;
+	}
+
+	.Details_RP400 a {
+		font-size: calc(0.69em + 1vw);
+		font-family: Rubik,sans-serif;
+	}
+
+	.container_text h1 {
+		margin-top: 10px;
+	}
+
+	.container_text p {
+		font-family: Rubik,sans-serif;
+		font-weight: 300;
+	}
+
+	.Buy-now {
+		padding: 30px;
+	}
+
+	.Buy-now_images {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		width: 20%;
+		margin-bottom: 50px;
+		margin: auto;
+	}
+
+	/*Boton de Comprar ahora: Imagen ML y MP*/
+	.Buy-now_images_ML-MP img {
+		width:80%;
+	 	height:75%;
+	}
+
+	/*Boton de Comprar ahora: Logo Ubiot*/
+	.Buy-now_images_logo-ubiot img {
+		width:95px;
+	  height:105px;
+	}
 
 }
 
+/*****************************************************************************/
+/*Producto 2: Raspberry Pi 2W*/
+.product-details_RP2W {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container_raspberrypi2W {
+	font-family: Rubik,sans-serif;
+}
+
+/*Imagen principal del producto*/
+.main-image_RP2W {
+	width: 100%;
+	height: 660px;
+	display: grid;
+	grid-template-columns: 50% auto;
+	align-items: center;
+}
+.main-image_RP2W img {
+	width: 110%;
+	filter: drop-shadow(10px 13px 10px #343434);
+}
+
+/*Texto principal del producto*/
+.main-image_text {
+	position: relative;
+	height: 30%;
+	color: black;
+	text-align: left;
+	margin: auto;
+	text-rendering: optimizeLegibility;
+}
+
+.main-image_text h1 {
+	padding: 10px;
+	color: black;
+	font-family: Rubik,sans-serif;
+	font-weight: 300;
+	font-size: calc(2em + 1vw);
+}
+
+.main-image_text p {
+	padding: 10px;
+	color: black;
+	font-size: calc(0.8em + 1vw);
+	font-family: Rubik,sans-serif;
+	font-weight: bold;
+}
+
+/*Detalles del producto*/
+.main-image_RP2W a {
+	display:block;
+	width: 20%;
+	position: relative;
+	left: 5%;
+	top: 75%;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: calc(0.9em + 1vw);
+	font-family: Rubik,sans-serif;
+}
+
+.main-image_RP2W a:hover {
+	text-decoration: underline;
+}
+
+.background_RP2W {
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background: #343434;
+	text-align: center;
+	padding: 40px;
+}
+
+.background_RP2W h1 {
+	color: white;
+	font-family: Rubik,sans-serif;
+	font-weight: bold;
+	font-size: calc(1.5em + 1vw);
+}
+
+.background_RP2W p {
+	color: white;
+	padding: 0px 80px;
+	font-family: Rubik,sans-serif;
+	font-weight: 300;
+	font-size: calc(0.6em + 1vw);
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+/*Boton Explorar proyectos*/
+.background_RP2W a {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: 1px solid #1a55ae; /* Azul */
+	background-color: #1a55ae;
+	border-radius: 15px;
+ 	font-family: sans-serif;
+	font-weight: 700;
+	font-size: calc(0.8em + 1vw);
+ 	transition-duration: 0.4s;
+}
+
+.background_RP2W a:hover {
+  background-color: #2f71d4; /*Azul claro*/
+	border: 1px solid #2f71d4;
+	cursor: pointer;
+}
+
+.background_RP2W img {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+
+/*Caracteristicas RP2W*/
+.container_text li {
+	font-family: Rubik,sans-serif;
+	font-weight: 300;
+	font-size: calc(0.6em + 1vw);
+}
+
+/*Detalles del producto: Scroll*/
+.Details_RP2W {
+	position: relative;
+	height: 80px;
+	background: #bb1e3d;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px;
+	align-items: center;
+}
+
+.Details_RP2W a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: calc(0.9em + 1vw);
+	font-family: Rubik,sans-serif;
+}
+
+.Details_RP2W a:hover {
+	text-decoration: underline;
+}
+
+/*Responsive*/
+@media (max-width: 750px) {
+	/*Detalles del producto: Scroll*/
+	.Details_RP2W {
+		padding: 5px;
+	}
+
+	.Details_RP2W a {
+		font-size: calc(0.69em + 1vw);
+		font-family: Rubik,sans-serif;
+	}
+}
+
+/*****************************************************************************/
 /*Software*/
 .software-content h1 {
 	font-family: Roboto,sans-serif;
@@ -539,219 +970,7 @@ div nav ul li div ul div {
 	color: #b40c14;
 	text-align: center;
 }
-/*****************************************************************************/
-/*Detalles de la seccion de productos*/
-.product-details {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
-.container_raspberrypi400 {
-	font-family: Rubik, sans-serif;
-}
-
-/*Imagen principal del producto*/
-.main-image {
-	position: relative;
-	width: 100%;
-	height: 660px;
-	background-image: url(Raspberry-Pi-400.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 660px;
-}
-
-/*Texto principal del producto*/
-.main-image p {
-	width: 40%;
-	position: absolute;
-	left: 5%;
-	top: 54%;
-	color: white;
-	font-size: 30px;
-	font-family: Rubik,sans-serif;
-}
-
-/*Detalles del producto*/
-.main-image a {
-	display:block;
-	width: 20%;
-	position: relative;
-	left: 5%;
-	top: 75%;
-	margin-bottom: 10px;
-	text-decoration: none;
-	color: black;
-	font-size: calc(0.9em + 1vw);
-	font-family: Rubik,sans-serif;
-}
-
-.main-image a:hover {
-	text-decoration: underline;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-section {
-	height: 700px;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 10px 35px;
-	align-items: center;
-}
-
-section h1 {
-	width: 85%;
-	font-size: calc(1.4em + 1vw);
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-section p {
-	width: 90%;
-	font-size: calc(0.8em + 1vw);
-	font-weight: 300;
-	margin-bottom: 20px;
-}
-
-section img {
-	width: 55%;
-	height: 50%;
-	border-radius: 15px;
-	margin-bottom: 10px;
-}
-
-/*Detalles del producto: Backgrounds*/
-section:nth-child(1) {
-	background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
-}
-
-section:nth-child(2) {
-	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-}
-
-section:nth-child(3) {
-	background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-}
-
-/*Detalles del producto: Scroll*/
-.Details {
-	position: relative;
-	width: 100%;
-	height: 80px;
-	background: #bb1e3d;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 5px;
-	align-items: center;
-}
-
-.Details a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	font-size: calc(0.9em + 1vw);
-	font-family: Rubik,sans-serif;
-}
-
-.Details a:hover {
-	text-decoration: underline;
-}
-
-/*Detalles del producto: Comprar ahora*/
-.Buy-now {
-	width: 100%;
-	height: 650px;
-	padding: 50px;
-	background-color: #d02d1e /*Vinotinto*/
-}
-
-.Buy-now_content {
-	width: 100%;
-	height: 550px;
-	background-color: #fff;
-	text-align: center;
-	align-items: center;
-	display: block;
-	position: relative;
-	padding: 40px;
-}
-
-.Buy-now_content h1 {
-	font-size: calc(1.4em + 1vw);
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-
-.Buy-now_content p {
-	font-size: calc(0.9em + 1vw);
-	font-weight: 300;
-	margin-bottom: 50px;
-}
-
-/*Detalles del producto: Boton Comprar ahora*/
-.Buy-now_content a {
-	padding: 10px 15px;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	border: 1px solid #3ACB49; /* Green */
-	background-color: #3ACB49;
-	border-radius: 10px;
-	font-family: sans-serif;
-	font-weight: 700;
-	font-size: calc(1em + 1vw);
- 	transition-duration: 0.4s;
-}
-
-.Buy-now_content a:hover {
-  background-color: #61E96F; /* Green */
-	border: 1px solid #61E96F;
-	cursor: pointer;
-}
-
-.Buy-now_images {
-	position: relative;
-	width: 100%;
-	margin: 45px 0px;
-	align-items: center;
-	justify-content: center;
-	display: inline-flex;
-}
-
-.Buy-now_images img {
-	padding: 10px;
-	margin-right: 30px;
-}
-
-/*Responsive*/
-@media screen and (max-width: 1000px) {
-	section {
-		flex-direction: column-reverse;
-	}
-
-	section img {
-		width: 100%;
-		height: 60%;
-		margin-bottom: 0px;
-	}
-
-	.container_text {
-		text-align: center;
-	}
-
-	section h1 {
-		width: 100%;
-	}
-
-	section p {
-		width: 100%;
-	}
-}
-/*****************************************************************************/
 /*About us*/
 .about-us-content h1 {
 	font-family: Roboto,sans-serif;
@@ -892,8 +1111,8 @@ footer {
 		}
 
 		header a img {  /*Imagen del logo*/
-			width: 35px;
-			height: 35px
+			width: 40px;
+			height: 40px
 			padding: 2px;
 			left: 5px;
 		}
