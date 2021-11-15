@@ -545,7 +545,7 @@ de los productos*/
 	left: 5%;
 	top: 54%;
 	color: white;
-	font-size: 30px;
+	font-size: calc(1.1em + 1vw);
 	font-family: Rubik,sans-serif;
 }
 
@@ -588,6 +588,27 @@ de los productos*/
 
 .Details_RP400 a:hover {
 	text-decoration: underline;
+}
+
+/*Boton comprar ahora*/
+.Details_RP400 button {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: 1px solid #3ACB49; /* Green */
+	background-color: #3ACB49;
+	border-radius: 5px;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: calc(0.5em + 1vw);
+ 	transition-duration: 0.4s;
+}
+
+.Details_RP400 button:hover {
+	background-color: #61E96F; /* Green */
+	border: 1px solid #61E96F;
+	cursor: pointer;
 }
 
 html {
@@ -707,32 +728,28 @@ section img {
 	section {
 		width: auto;
 		height: auto;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		padding: 20px;
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
 	}
 
 	section img {
-		width: 90%;
-		height: 65%;
-	}
-
-	.container_text {
-		text-align: left;
-	}
-
-	section h1 {
 		width: 100%;
-
-	}
-
-	section p {
-		width: 100%;
+		height: auto;
 	}
 }
 
 @media (max-width: 750px) {
+	.main-image_RP400 {
+		width: 100%;
+		height: 500px;
+		background-size: 100% 500px;
+	}
+
+	/*Texto principal del producto*/
+	.main-image_RP400 p {
+		width: 40%;
+	}
+
 	/*Detalles del producto: Scroll*/
 	.Details_RP400 {
 		padding: 5px;
@@ -740,25 +757,20 @@ section img {
 
 	.Details_RP400 a {
 		font-size: calc(0.69em + 1vw);
-		font-family: Rubik,sans-serif;
 	}
 
-	.container_text h1 {
-		margin-top: 10px;
-	}
-
-	.container_text p {
-		font-family: Rubik,sans-serif;
-		font-weight: 300;
+	.container_text {
+		text-align: left;
+		margin: 15px;
 	}
 
 	.Buy-now {
-		padding: 30px;
+		padding: 25px;
 	}
 
 	.Buy-now_images {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		display: flex;
+		flex-direction: column;
 		width: 20%;
 		margin-bottom: 50px;
 		margin: auto;
@@ -798,7 +810,10 @@ section img {
 	grid-template-columns: 50% auto;
 	align-items: center;
 }
+
 .main-image_RP2W img {
+	position: relative;
+	right: 10%;
 	width: 110%;
 	filter: drop-shadow(10px 13px 10px #343434);
 }
@@ -810,7 +825,6 @@ section img {
 	color: black;
 	text-align: left;
 	margin: auto;
-	text-rendering: optimizeLegibility;
 }
 
 .main-image_text h1 {
@@ -900,7 +914,6 @@ section img {
 	margin-top: 50px;
 }
 
-/*Caracteristicas RP2W*/
 .container_text li {
 	font-family: Rubik,sans-serif;
 	font-weight: 300;
@@ -930,8 +943,53 @@ section img {
 	text-decoration: underline;
 }
 
+/*Boton comprar ahora*/
+.Details_RP2W button {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: 1px solid #3ACB49; /* Green */
+	background-color: #3ACB49;
+	border-radius: 5px;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: calc(0.5em + 1vw);
+ 	transition-duration: 0.4s;
+}
+
+.Details_RP2W button:hover {
+	background-color: #61E96F; /* Green */
+	border: 1px solid #61E96F;
+	cursor: pointer;
+}
+
 /*Responsive*/
-@media (max-width: 750px) {
+@media (max-width: 850px) {
+	.main-image_RP2W {
+		display: flex;
+		flex-direction: column;
+		height: 80%;
+	}
+
+	.main-image_RP2W img {
+		right: 0%;
+		width: 110%;
+	}
+
+	.main-image_text {
+		margin-top: 5%;
+		margin-left: 2%;
+	}
+
+	.main-image_text h1 {
+		font-size: calc(1.5em + 1vw);
+	}
+
+	.main-image_text p {
+		font-size: calc(0.8em + 1vw);
+	}
+
 	/*Detalles del producto: Scroll*/
 	.Details_RP2W {
 		padding: 5px;
@@ -941,6 +999,34 @@ section img {
 		font-size: calc(0.69em + 1vw);
 		font-family: Rubik,sans-serif;
 	}
+
+	.Details_RP2W button {
+		padding: 5px 5px;
+	}
+
+	.background_RP2W {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+	}
+
+	.background_RP2W p {
+		font-size: calc(0.7em + 1vw);
+		padding: 0px 20px;
+	}
+
+	/*Boton Explorar proyectos*/
+	.background_RP2W a {
+		padding: 10px 5px;
+	}
+
+	.background_RP2W img {
+		width: auto;
+		height: auto;
+		margin-top: 45px;
+	}
+
 }
 
 /*****************************************************************************/
