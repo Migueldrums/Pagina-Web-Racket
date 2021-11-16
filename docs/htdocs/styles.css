@@ -14,6 +14,7 @@ body {
 
 header {
 	width: 100%;
+
 }
 
 #button-menu {
@@ -36,10 +37,10 @@ header label:hover {
 }
 
 header a img {  /*Logo Ubiot*/
-	width: 46px;
-	height: 56px;
+	width: 50px;
+	height: 65px;
 	position:absolute;
-	left: 7%;
+	left: 35%;
 	top: 4px;
 	transition: 0.4s;
 	z-index: 100;
@@ -429,6 +430,10 @@ div nav ul li div ul div {
 }
 
 .product_card button {
+	position: relative;
+	left: 74%;
+	right: 15px;
+	bottom: 10px;
 	background-color: #3ACB49;
 	border-radius: 8px;
 	padding: 8px 15px;
@@ -438,9 +443,6 @@ div nav ul li div ul div {
 	font-size: calc(0.5em + 1vw);
 	border: 2px solid #3ACB49; /* Green */
  	transition-duration: 0.4s;
-	margin-left: 73%;
-	margin-bottom: 3%;
-	margin-top: 2%;
 }
 
 .product_card button:hover {
@@ -508,8 +510,6 @@ div nav ul li div ul div {
 
 		.product_card button {
 			font-size: calc(0.6em + 1vw);
-			margin-left: 65%;
-			margin-bottom: 3%;
 		}
 }
 
