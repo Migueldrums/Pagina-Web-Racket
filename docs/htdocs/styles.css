@@ -36,11 +36,11 @@ header label:hover {
 	background: rgba(0,0,0,0.2);
 }
 
-header a img {  /*Logo Ubiot*/
+header a img {  /*Logo*/
 	width: 50px;
 	height: 65px;
 	position:absolute;
-	left: 35%;
+	left: 5%;
 	top: 4px;
 	transition: 0.4s;
 	z-index: 100;
@@ -60,18 +60,21 @@ header a img:hover {
 	list-style: none;
 	padding: 0px;
 	display: flex;
-	justify-content: center;
+	justify-content:flex-start;
 	overflow: hidden;
 	z-index: 1000;
 }
 
-.menu li a {
+.menu li > a {
 	display: block;
-	padding: 20px 20px;
+	padding: 20px 10px;
 	text-decoration: none;
 	color: black;
 	font-size: calc(0.6em + 1vw);
 	font-weight: bold;
+	position: relative;
+	margin-left: 95%;
+	width: 100%;
 }
 
 .menu li a:hover {
@@ -126,7 +129,7 @@ div nav ul li div ul div {
 
 .left-content p {
 	display:inline-flex;
-	margin-right: 26.5%;
+	margin-right: 28%;
 }
 
 .button-submenu {

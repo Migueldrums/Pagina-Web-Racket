@@ -11,12 +11,12 @@
                        (type "text/css")))
                 (meta ((name "viewport")
                        (content "width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1"))))
-                (script ([src "https://kit.fontawesome.com/e52591ecb3.js"]) (crossorigin "anonymous"))
+           ;     (script ([src "https://kit.fontawesome.com/e52591ecb3.js"]) (crossorigin "anonymous"))
           
           (body
            '(div
              (header
-              (a ((href "/ubiotstore.rkt")) (img ([src "logo-ubiot.png"])))
+              (a ((href "/ubiotstore.rkt")) (img ([src "logo-chamo.png"])))
               (input ((type "checkbox") (id "button-menu")))
               (label ((for "button-menu")) (img ([src "icono-menu.png"])))
               
@@ -28,17 +28,16 @@
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
                                        (li ((class "Titulo"))
-                                          (h1 "Computadoras y accesorios Raspberry Pi de bajo costo y alto rendimiento"))
-                                       (p (a ((href "https://www.raspberrypi.org/products/raspberry-pi-4-model-b/")) (button ((class "button-submenu")) "Comprar Raspberry Pi 4")))
-                                       (p (a ((href "RaspberryPi400.html")) (button ((class "button-submenu")) "Comprar Raspberry Pi 400"))))
+                                          (h1 "Computadoras Raspberry Pi de bajo costo y alto rendimiento"))
+                                       (p (a ((href "RaspberryPiZero2W.html")) (button ((class "button-submenu")) "Raspberry Pi Zero 2W")))
+                                       (p (a ((href "RaspberryPi400.html")) (button ((class "button-submenu")) "Raspberry Pi 400"))))
 
                                     (div ((class "right-content"))
                                        (li (a ((href "")) "Todos los productos"))
-                                       (li (a ((href "")) "Para la industria"))
-                                       (li (a ((href "")) "Documentación"))
-                                       (li (a ((href "")) "Foros"))))))
+                                       (li (a ((href "")) "Raspberry Pi 400"))
+                                       (li (a ((href "")) "Raspberry Pi Zero 2W"))))))
                            
-                           (li (a ((href "https://www.raspberrypi.com/software/")) "Software")
+                         #|  (li (a ((href "https://www.raspberrypi.com/software/")) "Software")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
@@ -90,9 +89,9 @@
                                     (div ((class "right-content"))
                                        (li (a ((href "")) "Enseñar Computación"))
                                        (li (a ((href "")) "Iniciar un club de códigos"))
-                                       (li (a ((href "")) "Cursos de formación online"))))))
+                                       (li (a ((href "")) "Cursos de formación online")))))) |#
                            
-                           (li (a ((href "about-us-section.html")) "Nosotros")
+                           (li (a ((href "about-us-section.html")) "Sobre nosotros")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
@@ -101,10 +100,10 @@
                                        (p (a ((href "https://www.raspberrypi.org/about/")) (button ((class "button-submenu")) "Sobre nosotros"))))
 
                                     (div ((class "right-content"))   
-                                       (li (a ((href "")) "Donar"))
-                                       (li (a ((href "")) "Apoyanos"))
-                                       (li (a ((href "")) "Investigar"))
-                                       (li (a ((href "")) "Blog")))))))))))
+                                       (li (a ((href "")) "Quienes somos"))
+                                       (li (a ((href "")) "Ubiot"))
+                                       (li (a ((href "")) "TEI"))
+                                       (li (a ((href "")) "Agropezim Group")))))))))))
 
            '(div ((class "page-content"))
              '(div ((class "backgroud-image"))                   
@@ -119,7 +118,7 @@
 
 
               '(footer
-                 '(div ((class "container__footer"))
+                #| '(div ((class "container__footer"))
                             
                      '(div ((class "box__footer"))
                            (h3 "SOBRE NOSOTROS")
@@ -155,7 +154,7 @@
                      '(div ((class "box__footer"))
                            (h3 "CONTACTANOS")
                            (p (a ((href "")) "Contacto 1"))
-                           (p (a ((href "")) "Contacto 2"))))
+                           (p (a ((href "")) "Contacto 2")))) |#
                  
                  '(div ((class "box__copyright"))
                        (hr)
