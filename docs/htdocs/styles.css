@@ -37,13 +37,13 @@ header label:hover {
 }
 
 header a img {  /*Logo*/
-	width: 50px;
-	height: 65px;
+	width: 65px;
+	height: 80px;
 	position:absolute;
 	left: 5%;
-	top: 4px;
+	top: 1%;
 	transition: 0.4s;
-	z-index: 100;
+	z-index: 1000;
 }
 
 header a img:hover {
@@ -52,8 +52,9 @@ header a img:hover {
 
 .navegacion {
 	width: 100%;
-	background: white;
 	position: relative;
+	height: 14%;
+	width: 100%;
 }
 
 .menu ul {
@@ -66,6 +67,8 @@ header a img:hover {
 }
 
 .menu li > a {
+	width: 100%;
+	height: 90px;
 	display: block;
 	padding: 20px 10px;
 	text-decoration: none;
@@ -73,8 +76,8 @@ header a img:hover {
 	font-size: calc(0.6em + 1vw);
 	font-weight: bold;
 	position: relative;
+	top: 20%;
 	margin-left: 95%;
-	width: 100%;
 }
 
 .menu li a:hover {
@@ -129,7 +132,7 @@ div nav ul li div ul div {
 
 .left-content p {
 	display:inline-flex;
-	margin-right: 28%;
+	margin-right: 30%;
 }
 
 .button-submenu {
@@ -154,6 +157,7 @@ div nav ul li div ul div {
 }
 
 .right-content {
+	position: relative;
 	width: 40%;
 	top: 0px;
 	left: 7%;
@@ -161,6 +165,7 @@ div nav ul li div ul div {
 }
 
 .right-content li a {
+	position: absolute;
 	padding: 5px;
 	top: 20px;
 	font-weight: 400;
@@ -168,6 +173,7 @@ div nav ul li div ul div {
 	position: relative;
 	text-align:left;
 	margin-left: 10px;
+	height: 30px;
 	color: #0052cc;
 }
 .right-content li > a:hover {
@@ -430,11 +436,12 @@ div nav ul li div ul div {
 	font-family: Rubik,sans-serif;
 	padding: 5px 30px;
 	font-size: calc(0.5em + 1vw);
+	margin-bottom: 20px;
 }
 
 .product_card button {
 	position: relative;
-	left: 74%;
+	left: 73%;
 	right: 15px;
 	bottom: 10px;
 	background-color: #3ACB49;
@@ -1192,12 +1199,15 @@ footer {
 		}
 
 		header a img {  /*Imagen del logo*/
-			width: 40px;
-			height: 40px
+			width: 45px;
+			height: 405px
 			padding: 2px;
 			left: 5px;
 		}
 
+		.navegacion {
+			height: 5%;
+		}
 		.menu {
 			position: absolute;
 			background: white;
@@ -1219,6 +1229,10 @@ footer {
 
 		.menu li a {
 			font-size: calc(1em + 1vw);
+			margin-left: 10px;
+			margin-bottom: 15px;
+			height: auto;
+
 		}
 
 		#button-menu:checked ~ .navegacion .menu {
