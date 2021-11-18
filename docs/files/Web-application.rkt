@@ -17,6 +17,7 @@
            '(div
              (header
               (a ((href "/ubiotstore.rkt")) (img ([src "logo-chamo.png"])))
+              (p "ChamoBit")
               (input ((type "checkbox") (id "button-menu")))
               (label ((for "button-menu")) (img ([src "icono-menu.png"])))
               
@@ -91,7 +92,7 @@
                                        (li (a ((href "")) "Iniciar un club de códigos"))
                                        (li (a ((href "")) "Cursos de formación online")))))) |#
                            
-                           (li (a ((href "about-us-section.html")) "Sobre nosotros")
+                           (li (a ((href "about-us-section.html")) "Nosotros")
                                (div
                                  (ul ((class "Submenu"))
                                     (div ((class "left-content"))
