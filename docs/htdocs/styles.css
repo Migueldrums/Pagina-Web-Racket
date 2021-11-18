@@ -72,6 +72,7 @@ header p {  /*Texto ChamoBit*/
 	padding: 0px;
 	display: flex;
 	justify-content:flex-end;
+	margin-right: 10px;
 	overflow: hidden;
 	z-index: 1000;
 }
@@ -90,7 +91,7 @@ header p {  /*Texto ChamoBit*/
 }
 
 .menu li a:hover {
-	color: #b40c14;
+	color: #2f71d4;
 }
 
 div > nav > ul > li:hover div {
@@ -152,16 +153,16 @@ div nav ul li div ul div {
 	font-family: Arial,sans-serif;
 	font-weight: 600;
 	font-size:calc(0.15em + 1vw);
-	background-color: #980407; /*Vinotinto Oscuro*/
+	background-color: #1a55ae; /*Azul Oscuro*/
 	border-radius: 5px;
-	border: 1px solid #980407;
+	border: 1px solid #1a55ae;
 	padding: 10px 10px;
 	color: white;
 	transition-duration: 0.3s;
 }
 
 .button-submenu:hover {
-	background-color: #b40c14; /*Vinotinto Claro*/
+	background-color: #2f71d4; /*Azul claro*/
 	color: white;
 }
 
@@ -306,15 +307,6 @@ div nav ul li div ul div {
 	background-position: -5px 0px
 }
 /*****************************************************************************/
-/*SECCIONES DEL MENU*/
-.content-sections {
-	margin: 40px 40px;
-	height: 500px;
-	border: 2px;
-	border-radius: 20px;
-	background-color: #ecdddd;
-}
-
 /*Seccion de Productos*/
 .products-section {
 	margin: auto;
@@ -451,20 +443,20 @@ div nav ul li div ul div {
 	left: 73%;
 	right: 15px;
 	bottom: 10px;
-	background-color: #3ACB49;
+	background-color: #1a55ae; /*Azul oscuro*/
 	border-radius: 8px;
 	padding: 8px 15px;
 	color: white;
 	font-family: sans-serif;
 	font-weight: 800;
 	font-size: calc(0.5em + 1vw);
-	border: 2px solid #3ACB49; /* Green */
+	border: 2px solid #1a55ae;
  	transition-duration: 0.4s;
 }
 
 .product_card button:hover {
-  	background-color: #61E96F; /* Green */
-		border: 2px solid #61E96F;
+  	background-color: #2f71d4; /*Azul claro*/
+		border: 2px solid #2f71d4;
 		cursor: pointer;
 }
 
@@ -804,7 +796,6 @@ section img {
 		width:95px;
 	  height:105px;
 	}
-
 }
 
 /*****************************************************************************/
@@ -1043,16 +1034,28 @@ section img {
 		height: auto;
 		margin-top: 45px;
 	}
-
 }
 
 /*****************************************************************************/
+/*SECCIONES DEL MENU*/
+.content-sections {
+	position: relative;
+	margin: 15px 40px;
+	height: 500px;
+	border: 2px;
+	border-radius: 20px;
+	background-color: #c9daf2
+}
+
 /*About us*/
 .about-us-content h1 {
+	position: absolute;
+	top: 20px;
+	left: 45%;
 	font-family: Roboto,sans-serif;
 	font-weight: 900;
 	font-size: 200%;
-	color: #b40c14;
+	color: #1a55ae;
 	text-align: center;
 }
 /*****************************************************************************/
