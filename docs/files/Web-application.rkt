@@ -110,12 +110,12 @@
              '(div ((class "backgroud-image"))                   
                      (h2 "Raspberry Pi")
                      (h3 "Desarrolla tus proyectos con una Raspberry Pi")
-                     (li (a ((href "software-section.html")) (button ((class "button-Saber-mas")) "Saber más")))
+                     (a ((href "software-section.html")) (button ((class "button-Saber-mas")) "Saber más"))
                      
               '(div ((class "right-buttons"))
-                     (li (a ((href "teach-section.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
-                     (li (a ((href "software-section.html")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
-                     (li (a ((href "learn-section.html")) (button ((class "button-three"))"Raspberry Pi 400 para trabajar y aprender en casa"))))))
+                     (li (a ((href "RaspberryPi400.html")) (button ((class "button-one")) "Raspberry Pi 400: La PC de escritorio de 70$")))
+                     (li (a ((href "RaspberryPi400.htmll")) (button ((class "button-two")) "Empieza a usar tu Raspberry Pi 400")))
+                     (li (a ((href "RaspberryPiZero2W.html")) (button ((class "button-three"))"Mira lo potente que es la Raspberry Pi Zero 2W"))))))
 
 
               '(footer
